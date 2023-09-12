@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+                /* Left side */
+a {
+    text-decoration: none;
+    color: #1E4AE9;
+}
+.container .login_session {
+    width: 50%;
+    height: 100%;
+}
+
+.container .login_session .formwrapper {
+    margin: 3% auto ;
+    height: auto;
+    max-width: 350px;
+}
+
+.container .login_session .formwrapper h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container .login_session .formwrapper p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.container .login_session .formwrapper .formInputs .Sign_up,
+.copyrights {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.login_session .formwrapper .formInputs input {
+    background-color: #f1f1f1;
+    border: 1px solid #979797;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+.login_session .formwrapper .formInputs p {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login_session .formwrapper .formInputs .gmail img,
+.login_session .formwrapper .formInputs .facebook img {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 12%;
+    top: 21%;
+} 
+    
+.login_session .formwrapper .formInputs .facebook,
+.login_session .formwrapper .formInputs .gmail {
+    background-color: #f1f1f1;
+}
+
+.login_session .formwrapper .formInputs p::before,
+.login_session .formwrapper .formInputs p::after {
+    content: "";
+    width: 45%;
+    height: 1px;
+    display: block;
+    background-color: rgb(83, 83, 83);
+    position: absolute;
+    top: 50%;
+}
+
+.login_session .formwrapper .formInputs p::after {
+    right: 1px;
+}
+.login_session .formwrapper .formInputs p::before {
+    left: 1px;
+}
+
+.waving_hand {
+    width: 22px;
+    height: 22px;
+    position: initial;
+}
+
+.gmail,
+.facebook {
+    border-radius: 8px;
+    color: #696D70;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 9px 13px 9px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.facebook:hover {
+    background-color: red;
+}
+
+.forgotPassword {
+    color: #1E4AE9;
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.btn {
+    border: 1px solid #004181;
+    border-radius: 8px;
+    background-color: #004181;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 11px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+                        /* Right side */
+
+.logo_container {
+    width: 50%;
+    height: 100%;
+    background-image: url("../Assets/images/atafom_background\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-size: cover;
+}   
+
+.atafom_logo_badge {
+    display: block;
+    margin: auto;
+    width: 90px;
+    height: 70px;
+}
+
+                /* Responsive */
+@media only screen and (max-width:520px) {
+    .logo_container {
+        display: none;
+    }
+
+    .container .login_session {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .container .login_session .formwrapper {
+       margin: 6% auto;
+        
+    }
+}
